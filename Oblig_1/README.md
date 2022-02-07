@@ -1,2 +1,2 @@
-# Obligatorisk innelevering 1
+# Obligatorisk innlevering 1
 - RDF representasjon av Simpson slekten fra serien "The Simpsons"
