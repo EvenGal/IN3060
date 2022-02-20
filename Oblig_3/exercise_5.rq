@@ -1,0 +1,11 @@
+PREFIX fam:  <http://www.ifi.uio.no/IN3060/family#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sim:  <http://www.ifi.uio.no/IN3060/simpsons#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?person ?age WHERE {
+  ?x foaf:age ?age .
+  ?x foaf:name ?person .
+  FILTER(?age > 10)
+} ORDER BY DESC(?age)
